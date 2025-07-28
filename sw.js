@@ -4,15 +4,28 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
             return cache.addAll([
-                '/',
-                '/index.html',
-                '/style.css',
-                '/script.js',
-                '/audio/namo_eng.mp3',
-                '/audio/namo_thai.mp3',
-                '/images/background.png',
-                '/icons/logo192x192.png',
-                '/icons/logo512x512.png',
+                '/Thai-Buddhist-Chants/',
+                '/Thai-Buddhist-Chants/index.html',
+                '/Thai-Buddhist-Chants/style.css',
+                '/Thai-Buddhist-Chants/script.js',
+
+                // audio
+                '/Thai-Buddhist-Chants/audio/คำบูชาพระรัตนตรัย.mp3',
+                '/Thai-Buddhist-Chants/audio/ชัยมงคลคาถาตอนต้น.mp3',
+                '/Thai-Buddhist-Chants/audio/ชัยมงคลคาถาตอนปลาย.mp3',
+                '/Thai-Buddhist-Chants/audio/บทสวดคุณพระรัตนตรัย.mp3',
+                '/Thai-Buddhist-Chants/audio/บทสวดไตรสรณคมน์.mp3',
+                '/Thai-Buddhist-Chants/audio/บทสวดแผ่เมตตาอุทิศส่วนกุศล.mp3',
+                '/Thai-Buddhist-Chants/audio/บทสวดมนต์นะโม3จบ.mp3',
+                '/Thai-Buddhist-Chants/audio/บทสวดมนต์บูชาพระรัตนตรัย.mp3',
+                '/Thai-Buddhist-Chants/audio/บทสวดเมตตาตนเอง.mp3',
+                '/Thai-Buddhist-Chants/audio/บทสวดเมตตาสัตว์ทั้งหลาย.mp3',
+                '/Thai-Buddhist-Chants/audio/พาหุงชัยมงคลคาถา.mp3',
+
+                // images & icons
+                '/Thai-Buddhist-Chants/images/background.png',
+                '/Thai-Buddhist-Chants/icons/logo192x192.png',
+                '/Thai-Buddhist-Chants/icons/logo512x512.png',
             ]);
         })
     );
