@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo32x32.png" type="image/png">
+    <title>บทสวดมนต์ของพุทธศาสนาไทย | Thai Buddhist Chants</title>
+    <meta name="description"
+        content="บทสวดมนต์ยอดนิยมของไทย พร้อมคำแปลภาษาไทยและอังกฤษ ฟังมนต์ศักดิ์สิทธิ์และคำอธิษฐานเพื่อการทำสมาธิและปฏิบัติธรรม Discover popular Thai Buddhist chants with Thai and English translations. Listen to sacred mantras and prayers for meditation and spiritual practice.">
+    <meta name="keywords"
+        content="บทสวดมนต์แบบไทย, มนต์พุทธ, คำอธิษฐานแบบไทย, การทำสมาธิ, พุทธศาสนา, คัมภีร์ศักดิ์สิทธิ์, บทสวดมนต์พร้อมคำแปลและเสียง, Thai Buddhist chants, Buddhist mantras, Thai prayers, meditation, Buddhism, sacred texts">
+    <meta name="author" content="Thai Buddhist Chants">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kajornkiat.github.io/Thai-Buddhist-Chants/">
+    <link rel="canonical" href="https://kajornkiat.github.io/Thai-Buddhist-Chants/">
+    <meta property="og:image" content="images/background.jpg">
+    <meta property="og:title"
+        content="บทสวดมนต์แบบไทย พร้อมคำแปล ฟังเสียงสวดมนต์เพื่อสมาธิและสติ | Thai Buddhist Chants - Sacred Mantras and Prayers">
+    <meta property="og:description"
+        content="รวมบทสวดมนต์ยอดนิยมแบบไทย พร้อมคำแปลภาษาอังกฤษ ฟังเสียงมนต์พุทธ เสริมสติ สมาธิ และความสงบในชีวิตประจำวัน | Discover popular Thai Buddhist chants with Thai and English translations.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title"
+        content="บทสวดมนต์แบบไทย พร้อมคำแปล ฟังเสียงสวดมนต์เพื่อสมาธิและสติ | Thai Buddhist Chants - Sacred Mantras and Prayers">
+    <meta property="twitter:description"
+        content="รวมบทสวดมนต์ยอดนิยมแบบไทย พร้อมคำแปลภาษาอังกฤษ ฟังเสียงมนต์พุทธ เสริมสติ สมาธิ และความสงบในชีวิตประจำวัน | Discover popular Thai Buddhist chants with Thai and English translations.">
+    <meta property="twitter:image" content="images/background.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d4af37">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🙏</div>
+                    <h1>บทสวดมนต์ของพุทธศาสนาไทย | Thai Buddhist Chants</h1>
+                </div>
+                <div class="header-controls">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="ค้นหาบทสวด" id="searchInput">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="installBtn" style="display: none;">Create Shortcut</button>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>บทสวดมนต์พุทธศาสนาอันศักดิ์สิทธิ์</h2>
+                <p>ค้นพบความงดงามและพลังทางจิตวิญญาณของบทสวดมนต์แบบไทยดั้งเดิมในพระพุทธศาสนา
+                    โดยแต่ละบทสวดประกอบด้วยข้อความภาษาไทย คำแปลภาษาอังกฤษ และเสียงสำหรับการทำสมาธิและการฝึกปฏิบัติ</p>
+            </section>
+
+            <section class="chants-grid" id="chantsGrid">
+                <!-- Chants will be populated by JavaScript -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; บทสวดมนต์ไทยประจำปี 2568 จัดทำเพื่อการศึกษาและการเสริมสร้างจิตวิญญาณ</p>
+                <div class="footer-links">
+                    <a href="#" onclick="showSection(event, 'about')">About</a>
+                    <a href="#" onclick="showSection(event, 'contact')">Contact</a>
+                    <a href="#" onclick="showSection(event, 'privacy')">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <section id="about" class="info-section">
+            <h2>About</h2>
+            <p>เว็บไซต์นี้จัดทำขึ้นเพื่อเผยแพร่บทสวดมนต์ไทยทางพระพุทธศาสนา พร้อมคำแปลภาษาไทยและภาษาอังกฤษ
+                โดยมีจุดมุ่งหมายเพื่อส่งเสริมการเรียนรู้ การปฏิบัติสมาธิ และการเสริมสร้างจิตใจให้สงบ
+                ด้วยบทสวดมนต์ที่เป็นมรดกทางวัฒนธรรมและจิตวิญญาณของไทย</p>
+        </section>
+
+        <section id="contact" class="info-section">
+            <h2>Contact</h2>
+            <p>หากมีข้อเสนอแนะ หรือต้องการติดต่อผู้จัดทำเว็บไซต์ สามารถส่งอีเมลมาได้ที่:
+                <a href="mailto:KOUY.baber@gmail.com">KOUY.baber@gmail.com</a>
+            </p>
+        </section>
+        <section id="privacy" class="info-section">
+            <h2>Privacy Policy</h2>
+            <p>เว็บไซต์นี้ไม่มีการเก็บรวบรวมข้อมูลส่วนบุคคลของผู้ใช้งาน ข้อมูลทั้งหมดที่นำเสนอจัดทำขึ้นเพื่อการศึกษา
+                การปฏิบัติธรรม และการเสริมสร้างจิตวิญญาณโดยไม่แสวงหาผลกำไร</p>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
